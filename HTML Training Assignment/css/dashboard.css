@@ -162,6 +162,11 @@ li {
     margin: 0px;
 }
 
+#content2 {
+    background-color: red;
+    margin: 0px;
+}
+
 #menu {
     padding-left: 29px;
     padding-top: 25px;
