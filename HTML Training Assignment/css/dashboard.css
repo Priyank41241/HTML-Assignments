@@ -219,13 +219,27 @@ li {
 }
 
 .nav-item {
-    margin-left: 2%;
+
     font-size: 15px;
     font-family: Roboto;
     font-weight: 600;
 }
 
+.nav-tabs {
+    border-bottom: 1px solid #ADADAD !important;
+}
 
+.nav-tabs .nav-link {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    color: #3E3E3E;
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid red !important;
+    color: red !important;
+}
 
 #snackbar {
 
