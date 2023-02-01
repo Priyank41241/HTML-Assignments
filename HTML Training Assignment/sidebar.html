@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg mb-4 navbar-light
+            bg-light">
+            <div class="container-fluid navcontainer p-0
+                justify-content-start">
+                <button class="btn me-2" onclick="openNav()" href="#"><img
+                        src="images/menu-bar.svg"></button>
+                <a href="#" class="navbar-brand me-5"><img
+                        src="images/header-logo.svg">
+                </a>
+                <div class="d-flex justify-content-around">
+                    <img class="mt-1 me-2" src="images/search-icon.svg"
+                        style="height: 19px;" alt="search">
+                    <input class="form-control me-2 p-0 border-0"
+                        type="search"
+                        placeholder="Search" aria-label="Search">
+                </div>
+            </div>
+            <div class="container-fluid gayab p-0 justify-content-end">
+                <img class="me-5" src="images/notification-icon.svg"
+                    alt="notification">
+                <img class="me-3" src="images/profile.png" alt="dp">
+                <div class="me-3">
+                    John doe
+                    <img src="images/downward-arrow.svg" alt="dropdown">
+                </div>
+            </div>
+        </nav>
+
+        <div id="contentBody">
+            <div id="mySidenav" class="sidenav">
+                <a href="dashboard.html" class="active"><img
+                        id="icons" src="images/dashboard-active.svg"> Dashboard</a>
+                <a href="innerpage.html"><img
+                        id="icons" src="images/graph-default.svg"> Analysis</a>
+                <a href="#"><img
+                        id="icons" src="images/inbox-default.svg">Inbox</a>
+                <a href="#"><img
+                        id="icons" src="images/clock-default.svg">History</a>
+                <a href="#"><img
+                        id="icons" src="images/user-default.svg">Users</a>
+                <a href="#"><img
+                        id="icons" src="images/maintenance-default.svg">Maintenance</a>
+                <a href="#"><img
+                        id="icons" src="images/setting-default.svg">Settings</a>
+            </div>
+            <div class="w-85 ms-5 p-0" id="content">
+                <div class="row" id="innerrow1">
+                    Dashboard
+                </div>
+                <div class="row" id="innerrow2">
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/star.svg" alt="star"
+                                    style="margin-left:
+                                    25px; margin-top: 10px;">
+                            </div>
+                            <div class="col-7" style="text-align:
+                                left;">
+                                <div class="row"
+                                    style="justify-content:initial;">
+                                    <strong id="dashtext">23,456</strong>
+                                </div>
+                                <div class="row">
+                                    New Products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/new-product.svg"
+                                    alt="star"
+                                    style="margin-left:
+                                    25px; margin-top: 10px;">
+                            </div>
+                            <div class="col-7" style="text-align:
+                                left;">
+                                <div class="row"
+                                    style="justify-content:initial;">
+                                    <strong id="dashtext">2345</strong>
+                                </div>
+                                <div class="row">
+                                    Added Products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/total-product.svg"
+                                    alt="star"
+                                    style="margin-left:
+                                    25px; margin-top: 10px;">
+                            </div>
+                            <div class="col-7" style="text-align:
+                                left;">
+                                <div class="row"
+                                    style="justify-content:initial;">
+                                    <strong id="dashtext">32,456</strong>
+                                </div>
+                                <div class="row">
+                                    Total Products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/dollar-filled.svg"
+                                    alt="star"
+                                    style="margin-left:
+                                    25px; margin-top: 10px;">
+                            </div>
+                            <div class="col-7" style="text-align:
+                                left;">
+                                <div class="row"
+                                    style="justify-content:initial;">
+                                    <strong id="dashtext">5678</strong>
+                                </div>
+                                <div class="row">
+                                    Today's sale
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/money-bag.svg"
+                                    alt="star" style="margin-left:
+                                    25px; margin-top: 10px;">
+                            </div>
+                            <div class="col-7" style="text-align:
+                                left;">
+                                <div class="row"
+                                    style="justify-content:initial;">
+                                    <strong id="dashtext">33,5342</strong>
+                                </div>
+                                <div class="row">
+                                    Total sale
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="innerrow3">
+                    <div class="d-flex flex-column" id="graphcolumn1">
+                        <div class="row" style="height: 30px;">
+                            <div class="col-2" style="justify-content:
+                                center;">
+                                <bold style=" font-size: 22px;
+                                    font-weight: 600;
+                                    color: #3E3E3E;">
+                                    Sale
+                                </bold>
+                            </div>
+                            <div class="col-10">
+                                <div class="row" style="color:#ADADAD;
+                                    margin-right:0px;font-size: 12px;">
+                                    <div class="col-9"></div>
+                                    <div class="d-flex col-1">
+                                        Weekly
+                                    </div>
+                                    <div class="d-flex col-1">
+                                        Monthly
+                                    </div>
+                                    <div class="d-flex col-1">
+                                        <p style="border-bottom: 1px
+                                            solid
+                                            red; color: red">Yearly</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 25px;">
+                            <img src="images/data-graph.png">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="graphcolumn2">
+                        <div class="row" style="height: 30px;">
+                            <bold style=" font-size: 22px;
+                                font-weight: 600;
+                                color: #3E3E3E;">
+                                Sales by country
+                            </bold>
+
+                        </div>
+                        <div class="row">
+                            <img class="piechart"
+                                src="images/pie-chart.svg">
+                        </div>
+                        <div class="row" style="margin: 0;">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-2"
+                                        style="justify-content:
+                                        center;">
+                                        <div id="circle1"></div></div>
+                                    <div class="col-10" style="color:
+                                        #3E3E3E;font-size: 14px;
+                                        font-family:
+                                        Roboto;padding: 0;margin-top:
+                                        3px;">
+                                        United States of America</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"
+                                        style="justify-content:
+                                        center;">
+                                        <div id="circle2"></div></div>
+                                    <div class="col-10" style="color:
+                                        #3E3E3E;font-size: 14px;
+                                        font-family:
+                                        Roboto;padding: 0;margin-top:
+                                        3px;">Russia</div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-2"
+                                        style="justify-content:
+                                        center;">
+                                        <div id="circle3"></div></div>
+                                    <div class="col-10" style="color:
+                                        #3E3E3E;font-size: 14px;
+                                        font-family:
+                                        Roboto;padding-left:
+                                        10px;margin-top: 3px;">Canada</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2"
+                                        style="justify-content:
+                                        center;">
+                                        <div id="circle4"></div></div>
+                                    <div class="col-10" style="color:
+                                        #3E3E3E;font-size: 14px;
+                                        font-family:
+                                        Roboto;padding-left: 10px
+                                        ;margin-top: 3px;">India</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="innerrow4">
+                    <div class="row" id="tablehead">
+                        <div class="d-flex col-10" style="text-align:
+                            left;
+                            font-size:22px;
+                            font-weight: 600;
+                            font-family: Roboto;
+                            letter-spacing: 0px;
+                            color: #3E3E3E;
+                            opacity: 1;">
+                            Invoices
+                        </div>
+                        <div class="d-flex col-2 justify-content-end"
+                            style="
+                            font-size: 70%;
+                            margin-top: 10px;
+                            color: #C8242F;
+                            opacity: 1;">
+                            View All
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table id="table">
+                            <tr class="tr">
+                                <th>INVOICE</th>
+                                <th>COMPANY NAME</th>
+                                <th>EMAIL</th>
+                                <th> DUE DATE</th>
+                                <th>STATUS</th>
+                                <th>AMOUNT</th>
+                            </tr>
+                            <tr class="tr">
+                                <td>651535</td>
+                                <td>Public Adjustment Firm</td>
+                                <td>georgia.young@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$47,800</td>
+
+                            </tr>
+                            <tr class="tr">
+                                <td>558612</td>
+                                <td>Other</td>
+                                <td>jessica.hanson@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$98,000</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>558612</td>
+                                <td>Vendor</td>
+                                <td>alma.lawson@example.com</td>
+                                <td>8 Sep, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$20,900</td>
+
+                            </tr>
+                            <tr class="tr">
+                                <td>558612</td>
+                                <td>Property Management Company</td>
+                                <td>kenzi.lawson@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$10,570</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>651535</td>
+                                <td>Subcontractor Company</td>
+                                <td>jackson.graham@example.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td><div id="failed">Failed</div></td>
+                                <td>$10,200</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>653518</td>
+                                <td>Mortgage Company</td>
+                                <td>felicia.reid@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td><div id="pending">Pending</div></td>
+                                <td>$12,600</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>487441</td>
+                                <td>TPA</td>
+                                <td>dolores.chambers@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$11,170</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>267400</td>
+                                <td>Fire Department</td>
+                                <td>nevaeh.simmons@example.com</td>
+                                <td>17, OCt 2020</td>
+                                <td><div id="failed">Failed</div></td>
+                                <td>$28,000</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>449003</td>
+                                <td>Insurance Carrier</td>
+                                <td>curties.weaver@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td><div id="paid">Paid</div></td>
+                                <td>$10,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
+<script>
+    function openNav() {
+	    var e = document.getElementById("mySidenav");
+        var content = document.getElementById("content");
+        var body = document.getElementById("contentBody");
+	    if (e.style.width == '15%')
+	    {
+	        e.style.width = '0%';
+            content.style.width = '100%';
+            body.style.margin = '0%';
+                
+	    }
+	    else 
+	    {
+	        e.style.width = '15%';
+            content.style.width = '85%';
+            body.style.marginLeft = '15%';
+	    }
+	}
+
+</script>
+<!-- <!DOCTYPE html>
+<html>
+    <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    <body>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <h2>Animated Sidenav Example</h2>
+        <p>Click on the element below to open the side navigation menu.</p>
+        <script>
+function openNav() {
+    var e = document.getElementById("mySidenav");
+    if (e.style.width == '250px')
+    {
+        e.style.width = '0px';
+    }
+    else 
+    {
+        e.style.width = '250px';
+    }
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    </body>
+</html> -->

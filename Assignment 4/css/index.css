@@ -1,0 +1,111 @@
+.leftcol {
+    width: 35vw;
+    border-radius: 50%;
+    background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+
+    .comlogo {
+        width: 50vw;
+    }
+
+    .comlogo1 {
+        padding-left: 20%;
+    }
+
+    .disc {
+        font-size: 2em !important;
+        padding-left: 15%;
+    }
+
+    .row {
+        margin-top: 10% !important;
+    }
+
+    .logo {
+        justify-content: center;
+        position: sticky;
+        height: max-content !important;
+        padding: 0 !important;
+
+    }
+
+    .username {
+        width: 90% !important;
+    }
+
+    .leftcol {
+        border: 1em solid #FFFFFF;
+    }
+
+    #login {
+        justify-content: center !important;
+    }
+
+    #flexdisp {
+        justify-content: space-around !important;
+    }
+
+
+}
+
+#login {
+    padding-top: 3vh;
+}
+
+.disc {
+    font-size: 2.7em;
+    font-family: Roboto;
+}
+
+.form-group {
+    margin-top: 3%;
+}
+
+.logintxt {
+    font-size: 1.4em;
+    font-family: Roboto;
+}
+
+.username {
+    height: 2em;
+    font-size: 1.5em;
+    width: 20em;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 3%;
+}
+
+.loginbtn {
+    border: none;
+    color: white;
+    width: 8em;
+    height: 3em;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.forgetpass {
+    padding-top: 2%;
+    border: none;
+    height: 2em;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    opacity: 1;
+}
+
+.register {
+    color: #ADADAD;
+}
+
+.register a {
+    color: #C8242F !important;
+    text-decoration: none;
+}

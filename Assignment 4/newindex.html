@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto"
+            rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css"
+            rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body style="background-color: #FAFAFA;">
+
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="d-flex logo pt-4 col-md-6 h-100
+                    justify-content-center">
+                    <img class="leftcol"
+                        src="images/hero-image.png" alt="img">
+                </div>
+                <div class="d-flex col-md-6 justify-content-start h-100
+                    " id="login">
+                    <form>
+                        <div class="form-group comlogo1">
+                            <img class="comlogo" src="images/logo.svg" alt="">
+                        </div>
+                        <div class="form-group disc">
+                            <p style="margin:0 !important;">
+                                <b>We are <ins class="text-danger">experts</ins>
+                                    in
+                                    business,</b>
+                            </p>
+                            <p style="margin:0 !important;">
+                                <b> marketing, growth, & sales.</b>
+                            </p>
+                        </div>
+                        <div class="form-group logintxt">
+                            <p>Login into your account</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="username"
+                                placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="username"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <div class="d-flex btnrow justify-content-between"
+                                id="flexdisp">
+                                <input type="submit" class="loginbtn"
+                                    value="Login">
+                                <a href="#" class="forgetpass">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-group register">
+                            Are you a new Member? <a href="#">Register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var width = screen.width;
+            var flexdisp = document.getElementById('flexdisp');
+            var row = document.getElementsByClassName('row');
+        
+            if(width < 768)
+            {
+                
+                flexdisp.classList.remove('d-flex');
+            }
+
+            if(width >= 768)
+            {
+                flexdisp.classList.add('d-flex');
+            }
+        </script>
+    </body>
+</html>

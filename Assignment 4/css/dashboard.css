@@ -32,7 +32,15 @@ li {
     }
 }
 
+@media (max-width: 992px) {
+    .gayab {
+        width: 50%;
+    }
 
+    .navcontainer {
+        width: 50%;
+    }
+}
 
 @media (max-width:1424px) {
     #innerrow3 {
